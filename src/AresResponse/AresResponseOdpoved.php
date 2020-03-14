@@ -25,4 +25,9 @@ class AresResponseOdpoved
         return $this->basicInformation;
     }
 
+    public function hasBasicInformation(): bool
+    {
+        return $this->basicInformation !== null;
+    }
+
 }

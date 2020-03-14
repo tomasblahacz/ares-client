@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace TomasBlaha\Ares\AresClient;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
 use TomasBlaha\Ares\AresResponse\AresResponse;
@@ -38,9 +39,15 @@ class AresClient
             )
         );
 
-        return $this->aresResponseDeserializer->deserializeAresResponse(
+        $aresResponse = $this->aresResponseDeserializer->deserializeAresResponse(
             $response->getBody()->getContents()
         );
+
+        if ($aresResponse->getData()->hasBasicInformation() === false) {
+            throw new \NoDataException('No data was found for request');
+        }
+
+        return $aresResponse;
     }
 
 }
