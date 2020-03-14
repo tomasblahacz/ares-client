@@ -5,6 +5,8 @@ declare(strict_types = 1);
 namespace TomasBlaha\Ares\AresClient;
 
 use GuzzleHttp\Client;
+use JMS\Serializer\Serializer;
+use JMS\Serializer\SerializerBuilder;
 use TomasBlaha\Ares\AresResponse\AresResponse;
 use TomasBlaha\Ares\AresResponse\AresResponseDeserializer;
 
@@ -19,13 +21,12 @@ class AresClient
     /** @var \TomasBlaha\Ares\AresResponse\AresResponseDeserializer */
     private $aresResponseDeserializer;
 
-    public function __construct(
-        Client $client,
-        AresResponseDeserializer $aresResponseDeserializer
-    )
+    public function __construct()
     {
-        $this->client = $client;
-        $this->aresResponseDeserializer = $aresResponseDeserializer;
+        $this->client = new Client();
+        $this->aresResponseDeserializer = new AresResponseDeserializer(
+            SerializerBuilder::create()->build()
+        );
     }
 
     public function getSubjectByIdentificationNumber(string $identificationNumber): AresResponse
