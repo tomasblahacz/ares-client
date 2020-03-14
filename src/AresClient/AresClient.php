@@ -44,7 +44,7 @@ class AresClient
         );
 
         if ($aresResponse->getData()->hasBasicInformation() === false) {
-            throw new \NoDataException('No data was found for request');
+            throw new \TomasBlaha\Ares\AresClient\Exception\NoDataException('No data was found for request');
         }
 
         return $aresResponse;
