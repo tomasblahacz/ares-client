@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<are:Ares_odpovedi xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3" xmlns:D="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.3" xmlns:U="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.3" odpoved_datum_cas="2020-03-14T08:54:06" odpoved_pocet="1" odpoved_typ="Basic" vystup_format="XML" xslt="klient" validation_XSLT="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_odpovedi.xsl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3/ares_answer_basic_v_1.0.3.xsd" Id="ares">
+    <are:Odpoved>
+        <D:VBAS>
+            <D:ICO zdroj="RZP">12345678</D:ICO>
+            <D:DIC zdroj="DPH">CZ12345678</D:DIC>
+            <D:OF zdroj="RZP">Jméno Příjmení</D:OF>
+            <D:DV>2015-02-11</D:DV>
+            <D:PF zdroj="RZP">
+                <D:KPF>101</D:KPF>
+                <D:NPF>
+                    Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku
+                </D:NPF>
+            </D:PF>
+            <D:AD zdroj="ARES">
+                <D:UC>Ulice 1</D:UC>
+                <D:PB>12345 Město</D:PB>
+            </D:AD>
+            <D:AA zdroj="ARES">
+                <D:IDA>425843787</D:IDA>
+                <D:KS>203</D:KS>
+                <D:NS>Česká republika</D:NS>
+                <D:NOK>Hlavní město Praha</D:NOK>
+                <D:N>Praha</D:N>
+                <D:NCO>Vinohrady</D:NCO>
+                <D:NMC>Praha 2</D:NMC>
+                <D:NU>Varšavská</D:NU>
+                <D:CD>488</D:CD>
+                <D:TCD>1</D:TCD>
+                <D:CO>23</D:CO>
+                <D:PSC>12000</D:PSC>
+                <D:AU>
+                    <U:KOL>19</U:KOL>
+                    <U:KK>19</U:KK>
+                    <U:KOK>3100</U:KOK>
+                    <U:KO>554782</U:KO>
+                    <U:KPO>27</U:KPO>
+                    <U:KSO>27</U:KSO>
+                    <U:KCO>490229</U:KCO>
+                    <U:KMC>500089</U:KMC>
+                    <U:PSC>12000</U:PSC>
+                    <U:KUL>477371</U:KUL>
+                    <U:CD>488</U:CD>
+                    <U:TCD>1</U:TCD>
+                    <U:CO>23</U:CO>
+                    <U:KA>21744424</U:KA>
+                    <U:KOB>21679789</U:KOB>
+                </D:AU>
+            </D:AA>
+            <D:PSU>NNAANANNNNNNNNNNNNNNNNNNANNNNN</D:PSU>
+            <D:RRZ>
+                <D:ZU>
+                    <D:KZU>310002</D:KZU>
+                    <D:NZU>Úřad městské části Praha 2</D:NZU>
+                </D:ZU>
+                <D:FU>
+                    <D:KFU>2</D:KFU>
+                    <D:NFU>Praha 2</D:NFU>
+                </D:FU>
+            </D:RRZ>
+            <D:KPP zdroj="RES">Bez zaměstnanců</D:KPP>
+            <D:Nace>
+                <D:NACE zdroj="RES">620</D:NACE>
+                <D:NACE zdroj="RES">74200</D:NACE>
+                <D:NACE zdroj="RES">7490</D:NACE>
+            </D:Nace>
+            <D:PPI>
+                <D:PP zdroj="RZP">
+                    <D:T>
+                        Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona
+                    </D:T>
+                </D:PP>
+            </D:PPI>
+            <D:Obory_cinnosti>
+                <D:Obor_cinnosti>
+                    <D:K>Z01056</D:K>
+                    <D:T>
+                        Poskytování software, poradenství v oblasti informačních technologií, zpracování dat, hostingové a související činnosti a webové portály
+                    </D:T>
+                </D:Obor_cinnosti>
+                <D:Obor_cinnosti>
+                    <D:K>Z01060</D:K>
+                    <D:T>
+                        Poradenská a konzultační činnost, zpracování odborných studií a posudků
+                    </D:T>
+                </D:Obor_cinnosti>
+                <D:Obor_cinnosti>
+                    <D:K>Z01068</D:K>
+                    <D:T>Fotografické služby</D:T>
+                </D:Obor_cinnosti>
+            </D:Obory_cinnosti>
+        </D:VBAS>
+    </are:Odpoved>
+</are:Ares_odpovedi>
