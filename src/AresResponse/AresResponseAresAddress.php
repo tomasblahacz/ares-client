@@ -83,52 +83,52 @@ class AresResponseAresAddress
      */
     private $zipCode;
 
-    public function getCountry(): AresResponseValue
+    public function getCountry(): ?AresResponseValue
     {
         return $this->country;
     }
 
-    public function getDistrict(): AresResponseValue
+    public function getDistrict(): ?AresResponseValue
     {
         return $this->district;
     }
 
-    public function getCity(): AresResponseValue
+    public function getCity(): ?AresResponseValue
     {
         return $this->city;
     }
 
-    public function getCityPart(): AresResponseValue
+    public function getCityPart(): ?AresResponseValue
     {
         return $this->cityPart;
     }
 
-    public function getCityPartName(): AresResponseValue
+    public function getCityPartName(): ?AresResponseValue
     {
         return $this->cityPartName;
     }
 
-    public function getStreet(): AresResponseValue
+    public function getStreet(): ?AresResponseValue
     {
         return $this->street;
     }
 
-    public function getHouseNumber(): AresResponseValue
+    public function getHouseNumber(): ?AresResponseValue
     {
         return $this->houseNumber;
     }
 
-    public function getHouseNumberType(): AresResponseValue
+    public function getHouseNumberType(): ?AresResponseValue
     {
         return $this->houseNumberType;
     }
 
-    public function getOrientationNumber(): AresResponseValue
+    public function getOrientationNumber(): ?AresResponseValue
     {
         return $this->orientationNumber;
     }
 
-    public function getZipCode(): AresResponseValue
+    public function getZipCode(): ?AresResponseValue
     {
         return $this->zipCode;
     }

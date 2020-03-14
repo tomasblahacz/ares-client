@@ -48,27 +48,27 @@ class AresResponseVbas
      */
     private $aresAddress;
 
-    public function getIco(): AresResponseValue
+    public function getIco(): ?AresResponseValue
     {
         return $this->ico;
     }
 
-    public function getDic(): AresResponseValue
+    public function getDic(): ?AresResponseValue
     {
         return $this->dic;
     }
 
-    public function getCompanyName(): AresResponseValue
+    public function getCompanyName(): ?AresResponseValue
     {
         return $this->companyName;
     }
 
-    public function getPostalAddress(): AresResponsePostalAddress
+    public function getPostalAddress(): ?AresResponsePostalAddress
     {
         return $this->postalAddress;
     }
 
-    public function getAresAddress(): AresResponseAresAddress
+    public function getAresAddress(): ?AresResponseAresAddress
     {
         return $this->aresAddress;
     }
